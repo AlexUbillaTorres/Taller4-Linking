@@ -3,17 +3,32 @@
 #include <stdio.h>
 #include "vector.h"
 
-int x[2] = {1, 2};
-int y[2] = {3, 4};
-int z[2];
-int a[2];
-int main() 
+typedef struct{
+    int x;
+    int y;
+}vector;
+
+int main()
 {
-    addvec(x, y, z, 2);
-    printf("z = [%d %d]\n", z[0], z[1]);
-    multvec(x, y, a, 2);
-    printf("a = [%d %d]\n", a[0], a[1]);
+vector v1;
+vector v2;
+vector z;
+vector a;
+
+    printf("Ingrese x para vector1: ");
+    scanf("%d",&v1.x);
+    printf("Ingrese y para vector1: ");
+    scanf("%d",&v1.y);
+    printf("Ingrese x para vector2: ");
+    scanf("%d",&v2.x);
+    printf("Ingrese y para vector2: ");
+    scanf("%d",&v2.y);
+    addvec(v1, v2, z, 2);
+    multvec(v1, v2, a, 2);
+    printf("z = [%d %d]\n", z.x, z.y);
+    printf("a = [%d %d]\n", a.x, a.y);
+
     return 0;
 }
-/* $end main2 */
+
 
