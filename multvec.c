@@ -1,12 +1,11 @@
 /* multvec.c */
 /* $begin multvec */
-void multvec(int *x, int *y, 
-	     int *z, int n) 
-{
-    int i;
+#include "vector.h"
 
-    for (i = 0; i < n; i++)
-	z[i] = x[i] * y[i];
+void multvec(vector c, vector d,
+             vector a) 
+{
+    a.x=c.x*d.x;
+    a.y=c.y*d.y;
 }
-/* $end multvec */
 
