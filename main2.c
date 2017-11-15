@@ -1,12 +1,5 @@
-/* $begin main2 */
-/* main2.c */
 #include <stdio.h>
 #include "vector.h"
-
-typedef struct{
-    int x;
-    int y;
-}vector;
 
 int main()
 {
@@ -23,8 +16,8 @@ vector a;
     scanf("%d",&v2.x);
     printf("Ingrese y para vector2: ");
     scanf("%d",&v2.y);
-    addvec(v1, v2, z, 2);
-    multvec(v1, v2, a, 2);
+    addvec(v1, v2, z);
+    multvec(v1, v2, a);
     printf("z = [%d %d]\n", z.x, z.y);
     printf("a = [%d %d]\n", a.x, a.y);
 
