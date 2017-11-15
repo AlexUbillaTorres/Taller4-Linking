@@ -8,5 +8,4 @@ void addvec(vector c, vector d,
    z.x=c.x+d.x;
    z.y=c.y+d.y;
 }
-/* $end addvec */
 
