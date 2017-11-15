@@ -1,5 +1,10 @@
-void addvec(int *x, int *y,
-	    int *z, int n);
+typedef struct{
+    int x;
+    int y;
+}vector;
 
-void multvec(int *x, int *y, 
-	     int *z, int n);
+void addvec(vector c, vector d,
+	    vector z);
+
+void multvec(vector c, vector d, 
+	     vector a);
