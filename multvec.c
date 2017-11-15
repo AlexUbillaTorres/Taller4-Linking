@@ -1,5 +1,3 @@
-/* multvec.c */
-/* $begin multvec */
 #include "vector.h"
 
 void multvec(vector c, vector d,
@@ -8,4 +6,3 @@ void multvec(vector c, vector d,
     a.x=c.x*d.x;
     a.y=c.y*d.y;
 }
-
