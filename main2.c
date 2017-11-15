@@ -23,5 +23,3 @@ vector a;
 
     return 0;
 }
-
-
