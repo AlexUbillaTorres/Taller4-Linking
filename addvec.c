@@ -1,12 +1,12 @@
 /* addvec.c */
 /* $begin addvec */
-void addvec(int *x, int *y,
-	    int *z, int n) 
-{
-    int i;
+#include "vector.h"
 
-    for (i = 0; i < n; i++)
-	z[i] = x[i] + y[i];
+void addvec(vector c, vector d,
+	    vector z) 
+{
+   z.x=c.x+d.x;
+   z.y=c.y+d.y;
 }
 /* $end addvec */
 
