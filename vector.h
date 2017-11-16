@@ -3,8 +3,6 @@ typedef struct{
     int y;
 }vector;
 
-void addvec(vector c, vector d,
-	    vector z);
+vector addvec(vector c, vector d);
 
-void multvec(vector c, vector d, 
-	     vector a);
+vector multvec(vector c, vector d);
