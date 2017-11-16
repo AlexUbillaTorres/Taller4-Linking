@@ -1,7 +1,7 @@
 typedef struct{
     int x;
     int y;
-}vector;
+} vector;
 
 vector addvec(vector c, vector d);
 
