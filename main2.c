@@ -18,8 +18,6 @@ vector a;
     scanf("%d",&v2.y);
     addvec(v1, v2, z);
     multvec(v1, v2, a);
-    printf("z = [%d %d]\n", z.x, z.y);
-    printf("a = [%d %d]\n", a.x, a.y);
-
-    return 0;
+    
+        return 0;
 }
